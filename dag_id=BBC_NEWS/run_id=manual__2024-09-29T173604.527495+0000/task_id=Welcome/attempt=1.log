@@ -1,0 +1,24 @@
+[2024-09-29T17:36:14.493+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: BBC_NEWS.Welcome manual__2024-09-29T17:36:04.527495+00:00 [queued]>
+[2024-09-29T17:36:14.505+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: BBC_NEWS.Welcome manual__2024-09-29T17:36:04.527495+00:00 [queued]>
+[2024-09-29T17:36:14.506+0000] {taskinstance.py:1283} INFO - 
+--------------------------------------------------------------------------------
+[2024-09-29T17:36:14.506+0000] {taskinstance.py:1284} INFO - Starting attempt 1 of 1
+[2024-09-29T17:36:14.506+0000] {taskinstance.py:1285} INFO - 
+--------------------------------------------------------------------------------
+[2024-09-29T17:36:14.531+0000] {taskinstance.py:1304} INFO - Executing <Task(PythonOperator): Welcome> on 2024-09-29 17:36:04.527495+00:00
+[2024-09-29T17:36:14.535+0000] {standard_task_runner.py:55} INFO - Started process 2264 to run task
+[2024-09-29T17:36:14.549+0000] {standard_task_runner.py:82} INFO - Running: ['airflow', 'tasks', 'run', 'BBC_NEWS', 'Welcome', 'manual__2024-09-29T17:36:04.527495+00:00', '--job-id', '346', '--raw', '--subdir', 'DAGS_FOLDER/practice.py', '--cfg-path', '/tmp/tmpiw4ond2m']
+[2024-09-29T17:36:14.551+0000] {standard_task_runner.py:83} INFO - Job 346: Subtask Welcome
+[2024-09-29T17:36:14.617+0000] {task_command.py:389} INFO - Running <TaskInstance: BBC_NEWS.Welcome manual__2024-09-29T17:36:04.527495+00:00 [running]> on host a8bd47e3eb35
+[2024-09-29T17:36:14.701+0000] {taskinstance.py:1513} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=BBC_NEWS
+AIRFLOW_CTX_TASK_ID=Welcome
+AIRFLOW_CTX_EXECUTION_DATE=2024-09-29T17:36:04.527495+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2024-09-29T17:36:04.527495+00:00
+[2024-09-29T17:36:14.702+0000] {logging_mixin.py:137} INFO - Welcome to news feed application
+[2024-09-29T17:36:14.703+0000] {python.py:177} INFO - Done. Returned value was: None
+[2024-09-29T17:36:14.712+0000] {taskinstance.py:1327} INFO - Marking task as SUCCESS. dag_id=BBC_NEWS, task_id=Welcome, execution_date=20240929T173604, start_date=20240929T173614, end_date=20240929T173614
+[2024-09-29T17:36:14.750+0000] {local_task_job.py:159} INFO - Task exited with return code 0
+[2024-09-29T17:36:14.784+0000] {taskinstance.py:2582} INFO - 1 downstream tasks scheduled from follow-on schedule check

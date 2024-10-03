@@ -1,0 +1,24 @@
+[2024-09-29T16:38:55.862+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: ETL.Transform manual__2024-09-29T16:38:45.784513+00:00 [queued]>
+[2024-09-29T16:38:55.875+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: ETL.Transform manual__2024-09-29T16:38:45.784513+00:00 [queued]>
+[2024-09-29T16:38:55.875+0000] {taskinstance.py:1283} INFO - 
+--------------------------------------------------------------------------------
+[2024-09-29T16:38:55.875+0000] {taskinstance.py:1284} INFO - Starting attempt 1 of 1
+[2024-09-29T16:38:55.876+0000] {taskinstance.py:1285} INFO - 
+--------------------------------------------------------------------------------
+[2024-09-29T16:38:55.905+0000] {taskinstance.py:1304} INFO - Executing <Task(PythonOperator): Transform> on 2024-09-29 16:38:45.784513+00:00
+[2024-09-29T16:38:55.908+0000] {standard_task_runner.py:55} INFO - Started process 831 to run task
+[2024-09-29T16:38:55.911+0000] {standard_task_runner.py:82} INFO - Running: ['airflow', 'tasks', 'run', 'ETL', 'Transform', 'manual__2024-09-29T16:38:45.784513+00:00', '--job-id', '276', '--raw', '--subdir', 'DAGS_FOLDER/first_dag.py', '--cfg-path', '/tmp/tmpz_hrsy56']
+[2024-09-29T16:38:55.912+0000] {standard_task_runner.py:83} INFO - Job 276: Subtask Transform
+[2024-09-29T16:38:55.978+0000] {task_command.py:389} INFO - Running <TaskInstance: ETL.Transform manual__2024-09-29T16:38:45.784513+00:00 [running]> on host a8bd47e3eb35
+[2024-09-29T16:38:56.086+0000] {taskinstance.py:1513} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=ETL
+AIRFLOW_CTX_TASK_ID=Transform
+AIRFLOW_CTX_EXECUTION_DATE=2024-09-29T16:38:45.784513+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2024-09-29T16:38:45.784513+00:00
+[2024-09-29T16:38:56.087+0000] {logging_mixin.py:137} INFO - Transforming data.
+[2024-09-29T16:38:56.087+0000] {python.py:177} INFO - Done. Returned value was: None
+[2024-09-29T16:38:56.097+0000] {taskinstance.py:1327} INFO - Marking task as SUCCESS. dag_id=ETL, task_id=Transform, execution_date=20240929T163845, start_date=20240929T163855, end_date=20240929T163856
+[2024-09-29T16:38:56.123+0000] {local_task_job.py:159} INFO - Task exited with return code 0
+[2024-09-29T16:38:56.153+0000] {taskinstance.py:2582} INFO - 1 downstream tasks scheduled from follow-on schedule check

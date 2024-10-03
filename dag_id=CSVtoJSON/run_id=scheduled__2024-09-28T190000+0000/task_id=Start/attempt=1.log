@@ -1,0 +1,28 @@
+[2024-09-29T19:43:46.880+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: CSVtoJSON.Start scheduled__2024-09-28T19:00:00+00:00 [queued]>
+[2024-09-29T19:43:46.900+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: CSVtoJSON.Start scheduled__2024-09-28T19:00:00+00:00 [queued]>
+[2024-09-29T19:43:46.900+0000] {taskinstance.py:1283} INFO - 
+--------------------------------------------------------------------------------
+[2024-09-29T19:43:46.901+0000] {taskinstance.py:1284} INFO - Starting attempt 1 of 1
+[2024-09-29T19:43:46.901+0000] {taskinstance.py:1285} INFO - 
+--------------------------------------------------------------------------------
+[2024-09-29T19:43:46.946+0000] {taskinstance.py:1304} INFO - Executing <Task(BashOperator): Start> on 2024-09-28 19:00:00+00:00
+[2024-09-29T19:43:46.950+0000] {standard_task_runner.py:55} INFO - Started process 4041 to run task
+[2024-09-29T19:43:46.955+0000] {standard_task_runner.py:82} INFO - Running: ['airflow', 'tasks', 'run', 'CSVtoJSON', 'Start', 'scheduled__2024-09-28T19:00:00+00:00', '--job-id', '439', '--raw', '--subdir', 'DAGS_FOLDER/practice.py', '--cfg-path', '/tmp/tmppdy66f4v']
+[2024-09-29T19:43:46.957+0000] {standard_task_runner.py:83} INFO - Job 439: Subtask Start
+[2024-09-29T19:43:47.088+0000] {task_command.py:389} INFO - Running <TaskInstance: CSVtoJSON.Start scheduled__2024-09-28T19:00:00+00:00 [running]> on host a8bd47e3eb35
+[2024-09-29T19:43:47.365+0000] {taskinstance.py:1513} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=CSVtoJSON
+AIRFLOW_CTX_TASK_ID=Start
+AIRFLOW_CTX_EXECUTION_DATE=2024-09-28T19:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2024-09-28T19:00:00+00:00
+[2024-09-29T19:43:47.366+0000] {subprocess.py:63} INFO - Tmp dir root location: 
+ /tmp
+[2024-09-29T19:43:47.368+0000] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', 'echo "I am reading the CSV now...."']
+[2024-09-29T19:43:47.374+0000] {subprocess.py:86} INFO - Output:
+[2024-09-29T19:43:47.376+0000] {subprocess.py:93} INFO - I am reading the CSV now....
+[2024-09-29T19:43:47.376+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2024-09-29T19:43:47.410+0000] {taskinstance.py:1327} INFO - Marking task as SUCCESS. dag_id=CSVtoJSON, task_id=Start, execution_date=20240928T190000, start_date=20240929T194346, end_date=20240929T194347
+[2024-09-29T19:43:47.454+0000] {local_task_job.py:159} INFO - Task exited with return code 0
+[2024-09-29T19:43:47.481+0000] {taskinstance.py:2582} INFO - 1 downstream tasks scheduled from follow-on schedule check

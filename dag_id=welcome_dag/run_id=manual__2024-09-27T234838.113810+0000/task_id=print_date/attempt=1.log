@@ -1,0 +1,24 @@
+[2024-09-27T23:48:44.538+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: welcome_dag.print_date manual__2024-09-27T23:48:38.113810+00:00 [queued]>
+[2024-09-27T23:48:44.556+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: welcome_dag.print_date manual__2024-09-27T23:48:38.113810+00:00 [queued]>
+[2024-09-27T23:48:44.557+0000] {taskinstance.py:1283} INFO - 
+--------------------------------------------------------------------------------
+[2024-09-27T23:48:44.557+0000] {taskinstance.py:1284} INFO - Starting attempt 1 of 1
+[2024-09-27T23:48:44.557+0000] {taskinstance.py:1285} INFO - 
+--------------------------------------------------------------------------------
+[2024-09-27T23:48:44.588+0000] {taskinstance.py:1304} INFO - Executing <Task(PythonOperator): print_date> on 2024-09-27 23:48:38.113810+00:00
+[2024-09-27T23:48:44.591+0000] {standard_task_runner.py:55} INFO - Started process 254 to run task
+[2024-09-27T23:48:44.594+0000] {standard_task_runner.py:82} INFO - Running: ['airflow', 'tasks', 'run', 'welcome_dag', 'print_date', 'manual__2024-09-27T23:48:38.113810+00:00', '--job-id', '13', '--raw', '--subdir', 'DAGS_FOLDER/welcome_dag.py', '--cfg-path', '/tmp/tmpn12035oz']
+[2024-09-27T23:48:44.595+0000] {standard_task_runner.py:83} INFO - Job 13: Subtask print_date
+[2024-09-27T23:48:44.672+0000] {task_command.py:389} INFO - Running <TaskInstance: welcome_dag.print_date manual__2024-09-27T23:48:38.113810+00:00 [running]> on host fb51fccab4c9
+[2024-09-27T23:48:44.758+0000] {taskinstance.py:1513} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=welcome_dag
+AIRFLOW_CTX_TASK_ID=print_date
+AIRFLOW_CTX_EXECUTION_DATE=2024-09-27T23:48:38.113810+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2024-09-27T23:48:38.113810+00:00
+[2024-09-27T23:48:44.759+0000] {logging_mixin.py:137} INFO - Today is 2024-09-27
+[2024-09-27T23:48:44.759+0000] {python.py:177} INFO - Done. Returned value was: None
+[2024-09-27T23:48:44.769+0000] {taskinstance.py:1327} INFO - Marking task as SUCCESS. dag_id=welcome_dag, task_id=print_date, execution_date=20240927T234838, start_date=20240927T234844, end_date=20240927T234844
+[2024-09-27T23:48:44.807+0000] {local_task_job.py:159} INFO - Task exited with return code 0
+[2024-09-27T23:48:44.835+0000] {taskinstance.py:2582} INFO - 1 downstream tasks scheduled from follow-on schedule check

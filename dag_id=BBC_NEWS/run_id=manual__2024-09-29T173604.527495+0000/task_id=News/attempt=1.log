@@ -1,0 +1,33 @@
+[2024-09-29T17:36:36.338+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: BBC_NEWS.News manual__2024-09-29T17:36:04.527495+00:00 [queued]>
+[2024-09-29T17:36:36.353+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: BBC_NEWS.News manual__2024-09-29T17:36:04.527495+00:00 [queued]>
+[2024-09-29T17:36:36.353+0000] {taskinstance.py:1283} INFO - 
+--------------------------------------------------------------------------------
+[2024-09-29T17:36:36.354+0000] {taskinstance.py:1284} INFO - Starting attempt 1 of 1
+[2024-09-29T17:36:36.354+0000] {taskinstance.py:1285} INFO - 
+--------------------------------------------------------------------------------
+[2024-09-29T17:36:36.381+0000] {taskinstance.py:1304} INFO - Executing <Task(PythonOperator): News> on 2024-09-29 17:36:04.527495+00:00
+[2024-09-29T17:36:36.385+0000] {standard_task_runner.py:55} INFO - Started process 2349 to run task
+[2024-09-29T17:36:36.388+0000] {standard_task_runner.py:82} INFO - Running: ['airflow', 'tasks', 'run', 'BBC_NEWS', 'News', 'manual__2024-09-29T17:36:04.527495+00:00', '--job-id', '353', '--raw', '--subdir', 'DAGS_FOLDER/practice.py', '--cfg-path', '/tmp/tmpee10zb58']
+[2024-09-29T17:36:36.390+0000] {standard_task_runner.py:83} INFO - Job 353: Subtask News
+[2024-09-29T17:36:36.456+0000] {task_command.py:389} INFO - Running <TaskInstance: BBC_NEWS.News manual__2024-09-29T17:36:04.527495+00:00 [running]> on host a8bd47e3eb35
+[2024-09-29T17:36:36.542+0000] {taskinstance.py:1513} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=BBC_NEWS
+AIRFLOW_CTX_TASK_ID=News
+AIRFLOW_CTX_EXECUTION_DATE=2024-09-29T17:36:04.527495+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2024-09-29T17:36:04.527495+00:00
+[2024-09-29T17:36:37.934+0000] {logging_mixin.py:137} INFO - 1 In pictures: Hurricane Helene destruction
+[2024-09-29T17:36:37.934+0000] {logging_mixin.py:137} INFO - 2 Huge Beirut strike leaves West powerless as Israel chases victory
+[2024-09-29T17:36:37.935+0000] {logging_mixin.py:137} INFO - 3 Zelensky gives his Ukraine 'victory plan' a hard sell in the US - did the pitch fall flat?
+[2024-09-29T17:36:37.935+0000] {logging_mixin.py:137} INFO - 4 Dame Maggie Smith lamented how Downton Abbey changed her off-screen life
+[2024-09-29T17:36:37.935+0000] {logging_mixin.py:137} INFO - 5 South Africa shooting: Manhunt underway as 17 people killed in Eastern Cape village attack
+[2024-09-29T17:36:37.936+0000] {logging_mixin.py:137} INFO - 6 Uber terms mean couple can't sue after 'life-changing' crash
+[2024-09-29T17:36:37.936+0000] {logging_mixin.py:137} INFO - 7 Who is Hezbollah leader Hassan Nasrallah?
+[2024-09-29T17:36:37.936+0000] {logging_mixin.py:137} INFO - 8 Actress Dame Maggie Smith dies at 89
+[2024-09-29T17:36:37.937+0000] {logging_mixin.py:137} INFO - 9 Austria's far-right Freedom Party eyes unprecedented election win
+[2024-09-29T17:36:37.937+0000] {logging_mixin.py:137} INFO - 10 US election polls tracker 2024: Who is ahead - Harris or Trump?
+[2024-09-29T17:36:37.937+0000] {python.py:177} INFO - Done. Returned value was: None
+[2024-09-29T17:36:37.948+0000] {taskinstance.py:1327} INFO - Marking task as SUCCESS. dag_id=BBC_NEWS, task_id=News, execution_date=20240929T173604, start_date=20240929T173636, end_date=20240929T173637
+[2024-09-29T17:36:38.010+0000] {local_task_job.py:159} INFO - Task exited with return code 0
+[2024-09-29T17:36:38.032+0000] {taskinstance.py:2582} INFO - 0 downstream tasks scheduled from follow-on schedule check
